@@ -1,0 +1,5 @@
+#ignora la carpeta de los archivos multimedia
+media/
+
+#ignora el archivo de los permisos
+permisos.sh
