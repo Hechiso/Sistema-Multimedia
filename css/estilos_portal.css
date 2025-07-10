@@ -1,0 +1,25 @@
+body{
+ background-color: #012;
+ display: flex;
+ margin: 0px;
+ padding: 0px;
+}
+
+a{
+ text-decoration: none;
+ color: #aaa;
+ display: inline;
+ padding: 0.5rem;
+ margin-left: 0.5rem;
+ border-bottom-style: solid;
+ box-shadow: rgb(50,200,50) 1px;
+ border-radius: 0px 0px 10px 10px;
+ transition: color ls ease-in-out 3s;
+}
+
+a:hover{
+ background: -webkit-linear-gradient(top,#FFF,#333);
+ color: #000;
+}
+
+

@@ -1,0 +1,23 @@
+body{
+  background-color: #012;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a{
+  text-decoration: none;
+  color: #aaa;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+

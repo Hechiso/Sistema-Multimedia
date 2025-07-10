@@ -1,5 +1,5 @@
 <?php
-    $video_dir = 'media/';
+    $video_dir = '../media/';
     $extensiones_video = ['mp4', 'webm', 'ogg'];
 
     foreach (scandir($video_dir) as $archivo) {
