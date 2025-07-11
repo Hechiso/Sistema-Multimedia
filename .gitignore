@@ -1,5 +1,7 @@
 #ignora la carpeta de los archivos multimedia
 media/
+
 Paginas/rc_img/
+
 #ignora el archivo de los permisos
 permisos.sh

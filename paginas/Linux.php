@@ -4,49 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia</title> 
-    <link rel="stylesheet" href="../css/estilos_principal.css">
-    <link rel="stylesheet" href="../css/estilos_inve.css">
+    <link rel="stylesheet" href="../css/estilos_linux.css">
+    
 </head>
-<body>
+<body class="cuerpo">
 
-    <div class="systemd">
-       <a href="systemd.php">
-          <figure>
-             <img src="rc_img/systemd.png"></img>
-          <figcaption>systemd<figcaption>
-          </figure> 
-       </a>
-    </div>
+ <div class="systemd">
+    <a href="systemd.php"><img src="rc_img/systemd.png"></img><p>systemd</p></a>
+
+</div>
+
+ <div class="systemd">
+    <a href="systemd.php"><img src="rc_img/screen.jpg"></img><p>comandos</p></a>
+
+</div>
+
+ <div class="systemd">
+    <a href="systemd.php"><img src="rc_img/screen.jpg"></img><p>c</p></a>
+
+</div>
+
+ <div class="systemd">
+    <a href="systemd.php"><img src="rc_img/screen.jpg"></img><p>c++</p></a>
 
 
 
-
-    <div class="systemd">
-    <a href="systemd.php">
-    <figure>
-    <img src="rc_img/screen.jpg"></img>
-    <figcaption>comandos<figcaption>
-    </figure> 
-    </a>
-    </div>
-
-    <div class="systemd">
-    <a href="systemd.php">
-    <figure>
-    <img src="rc_img/screen.jpg"></img>
-    <figcaption>c<figcaption>
-    </figure>
-    </a>
-    </div>
-
-    <div class="systemd">
-    <a href="systemd.php">
-    <figure>
-    <img src="rc_img/screen.jpg"></img>
-    <figcaption>c++<figcaption>
-    </figure>
-    </a>
-    </div>
+</div>
 
 </body>
 
