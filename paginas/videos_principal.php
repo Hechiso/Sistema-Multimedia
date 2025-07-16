@@ -10,9 +10,9 @@
 
   
      <a href="anime.php">Anime</a>
-     <a href="#">Musica</a>
-     <a href="#">Peliculas</a>
-     <a href="#">Programacion</a>
+     <a href="videos_musica.php">Musica</a>
+     <a href="pelis.php">Peliculas</a>
+     <a href="programacion.php">Programacion</a>
      <a href="#">Cortos aleatorios</a>
 
 </body>
