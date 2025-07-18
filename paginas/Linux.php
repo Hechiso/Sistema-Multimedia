@@ -15,17 +15,17 @@
 </div>
 
  <div class="systemd">
-    <a href="systemd.php"><img src="rc_img/screen.jpg"></img><p>comandos</p></a>
+    <a href="comandos.php"><img src="rc_img/comandos.jpg"></img><p>comandos</p></a>
 
 </div>
 
  <div class="systemd">
-    <a href="systemd.php"><img src="rc_img/screen.jpg"></img><p>c</p></a>
+    <a href="c.php"><img src="rc_img/screen.jpg"></img><p>c</p></a>
 
 </div>
 
  <div class="systemd">
-    <a href="systemd.php"><img src="rc_img/screen.jpg"></img><p>c++</p></a>
+    <a href="c++.php"><img src="rc_img/screen.jpg"></img><p>c++</p></a>
 
 
 

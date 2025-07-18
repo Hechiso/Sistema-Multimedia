@@ -1,6 +1,6 @@
 <?php
-    $video_dir = '../media/programacion/';
-    $extensiones_video = ['mp4', 'webm', 'ogg'];
+    $video_dir = '../media/libros/';
+    $extensiones_video = ['pdf', 'txt', 'README'];
 
     foreach (scandir($video_dir) as $archivo) {
         if ($archivo === '.' || $archivo === '..') continue;
@@ -18,13 +18,13 @@
 
             // Verificar si la miniatura existe
             if (!file_exists($imagen_path)) {
-                $imagen_path = '../media/programacion/default.jpg'; // Imagen por defecto si no existe miniatura
+                $imagen_path = '../media/libros/default.jpg'; // Imagen por defecto si no existe miniatura
             }
 
-            echo '<div class="video-item">';
-            echo '<img src="' . htmlspecialchars($imagen_path) . '" class="video-thumb" onclick="toggleVideo(\'' . htmlspecialchars($video_path) . '\', this)">';
-	      echo '<div class="video-wrapper"></div>';
-	    echo '</div>';
+            echo '<a href="' . htmlspecialchars($video_path) .'">';
+            echo '<img src="' . htmlspecialchars($imagen_path) .  '">';
+	 
+	    echo '</a>';
 
 
 

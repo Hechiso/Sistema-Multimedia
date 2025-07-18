@@ -1,0 +1,30 @@
+div{
+  display: block;
+}
+
+.articulo{
+  background-color: #aaa;
+  color: #222;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p{
+ margin-left: 0.5rem;
+}
+
+strong{
+ margin-left: 5rem;
+}
+
+
+.contenido{
+  display: block; 
+}
+
+
+
+.contenido p{
+
+  margin: 3px;
+}

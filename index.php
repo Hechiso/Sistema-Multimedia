@@ -10,9 +10,9 @@
 <body class="cuerpo">
 
     <a href="paginas/videos_principal.php">Videos</a>
-    <a href="#">Mangas</a>
+    <a href="paginas/mangas.php">Mangas</a>
     <a href="#">Musica</a>
-    <a href="#">Libros</a>
+    <a href="paginas/libros.php">Libros</a>
     <a href="paginas/Linux.php">Linux</a>
     <a href="#">Iniciar Sesion</a>
 </body>

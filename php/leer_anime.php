@@ -18,7 +18,7 @@
 
             // Verificar si la miniatura existe
             if (!file_exists($imagen_path)) {
-                $imagen_path = 'default.jpg'; // Imagen por defecto si no existe miniatura
+                $imagen_path = '../media/mushoku/default.jpg'; // Imagen por defecto si no existe miniatura
             }
 
             echo '<div class="video-item">';

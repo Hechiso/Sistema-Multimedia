@@ -2,6 +2,7 @@ body{
  background-color: #012;
  margin: 0px;
  padding: 0px;
+ color: #aaa;
 }
 ul{
 margin: 0;
@@ -29,3 +30,16 @@ a:hover{
  background: -webkit-linear-gradient(top,#FFF,#333);
  color: #000;
 }
+
+/*###################################################*/
+
+
+.primer{
+margin-top: 4rem;
+
+
+p{
+ text-align: center;
+}
+
+
