@@ -14,7 +14,7 @@
     <a href="#">Musica</a>
     <a href="paginas/libros.php">Libros</a>
     <a href="paginas/Linux.php">Linux</a>
-    <a href="#">Iniciar Sesion</a>
+    <a href="paginas/registro.php">Iniciar Sesion</a>
 </body>
 
 </html>

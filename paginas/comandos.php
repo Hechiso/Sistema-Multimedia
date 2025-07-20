@@ -10,7 +10,7 @@
 <body>
 
 <div>
-<?php include "../php/leer_articulos.php"; ?>
+<?php include "../php/leer_comandos.php"; ?>
 </div>
 
 </body>

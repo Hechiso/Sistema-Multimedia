@@ -10,7 +10,7 @@
 <body class="cuerpo">
 
  <div class="systemd">
-    <a href="systemd.php"><img src="rc_img/systemd.png"></img><p>systemd</p></a>
+    <a href="servicios_systemd.php"><img src="rc_img/systemd.png"></img><p>systemd</p></a>
 
 </div>
 

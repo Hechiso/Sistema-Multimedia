@@ -1,6 +1,6 @@
 <?php
 
-$carpeta = __DIR__ . '/../paginas/articulos/';
+$carpeta = __DIR__ . '/../paginas/articulos/systemd/';
 $archivos = glob("$carpeta/*.json");
 
 function mostrarArticulo($data) {
