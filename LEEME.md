@@ -1,6 +1,9 @@
 markdown
 
 #Servidor Multimedia
+#Web Blog
+#Tutoriales
+#Ariculos
 
 ## Requisitos
 
