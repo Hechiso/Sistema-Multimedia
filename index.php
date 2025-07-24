@@ -15,6 +15,7 @@
     <a href="paginas/libros.php">Libros</a>
     <a href="paginas/Linux.php">Linux</a>
     <a href="paginas/registro.php">Iniciar Sesion</a>
+
 </body>
 
 </html>

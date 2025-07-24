@@ -8,10 +8,14 @@
     
 </head>
 <body class="cuerpo">
+ <div class="contenedor">
 
  <div class="systemd">
-    <a href="servicios_systemd.php"><img src="rc_img/systemd.png"></img><p>systemd</p></a>
-</div>
+    <a href="servicios_systemd.php">
+      <img src="rc_img/systemd.png"></img>
+      <p>systemd</p>
+    </a>
+ </div>
 
  <div class="systemd">
     <a href="comandos.php"><img src="rc_img/comandos.jpg"></img><p>comandos</p></a>
@@ -31,8 +35,7 @@
 
 
 
-
-
+</div>
 </body>
 
 </html>

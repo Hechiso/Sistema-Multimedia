@@ -9,11 +9,11 @@
 <body class="cuerpo">
 
   
-     <a href="anime.php">Anime</a>
-     <a href="videos_musica.php">Musica</a>
-     <a href="pelis.php">Peliculas</a>
-     <a href="programacion.php">Programacion</a>
-     <a href="videos_cortos.php">Cortos aleatorios</a>
+     <a href="comedia.php">Comedia</a>
+     <a href="misterio.php">Misterio</a>
+     <a href="japones.php">Japones</a>
+     <a href="motivacion.php">Motivacion</a>
+     <a href="#">Varios</a>
 
 </body>
 </html>
