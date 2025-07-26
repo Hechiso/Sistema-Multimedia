@@ -24,3 +24,22 @@ img{
 .mu p{
   margin-left: 0.05rem;
 }
+
+
+@media (max-width: 635px){
+
+a{
+  display: block;
+  width: 85%;  
+}
+
+.mu{
+  display: block;
+}
+
+img{
+   width: 100%;
+}
+
+}
+

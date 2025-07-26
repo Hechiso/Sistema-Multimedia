@@ -3,7 +3,7 @@
 
         if (container.innerHTML.trim() === "") {
             // Inserta el video
-            container.innerHTML = `<video controls autoplay muted>           
+            container.innerHTML = `<video controls autoplay>           
                 <source src="${videoSrc}" type="video/mp4">
                 Tu navegador no soporta video HTML5.
 		</video>`;

@@ -1,5 +1,5 @@
 <?php
-$directorio = "../media/japones/";
+$directorio = "../media/vr/";
 $videos = array_diff(scandir($directorio), array('.', '..'));
 
 $extensiones_validas = ['mp4', 'webm', 'ogg'];
@@ -12,10 +12,15 @@ foreach ($videos as $archivo) {
     }
 }
 shuffle($lista_videos);
-
 ?>
+<?php
+session_start();
 
-
+if (!isset($_SESSION['usuario'])) {
+    header("Location: ../index.php");
+    exit;
+}
+?>
 
 
 <!DOCTYPE html>
@@ -29,7 +34,6 @@ shuffle($lista_videos);
     <link rel="stylesheet" href="../css/estilos_cortos.css">
 </head>
 <body>
-<!-- HTML protegido -->
 
      <video id="videoPlayer" controls autoplay></video>
 
@@ -37,6 +41,7 @@ shuffle($lista_videos);
         const listaReproduccion = <?php echo json_encode($lista_videos); ?>;
     </script>
     <script src="reproductor_x.js"></script>
+    <a href="logout.php">cerrar session</a>
 
 
 </body>

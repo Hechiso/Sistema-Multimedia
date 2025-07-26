@@ -40,3 +40,18 @@ video {
     border-radius: 8px;
 }
 
+
+
+
+
+@media(max-width: 635px){
+
+	.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columnas del mismo ancho */
+    gap: 1.3em; /* espacio entre los videos */
+    padding: 0.7em;
+}
+
+
+}

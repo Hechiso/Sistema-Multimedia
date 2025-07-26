@@ -6,6 +6,7 @@ function cargarVideo(indice) {
        
     video.play();
 
+
     }
 }
 
@@ -25,4 +26,8 @@ window.onload = () => {
         alert("No se encontraron videos en la carpeta.");
     }
 };
+
+
+
+
 

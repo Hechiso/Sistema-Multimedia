@@ -35,7 +35,7 @@ if (isset($_POST['enviar'])) {
 
     if ($loginExitoso) {
 	      $_SESSION['usuario'] = $_POST['usuario'];  // Guardar el usuario en la sesión
-        header("Location: ../paginas/videos.php");
+	      header("Location: ../paginas/videos_q.php");
         exit;
     } else {
         echo "Usuario no registrado.";

@@ -11,6 +11,8 @@ foreach ($videos as $archivo) {
         $lista_videos[] = $directorio . $archivo;
     }
 }
+shuffle($lista_videos);
+
 ?>
 
 
@@ -24,11 +26,10 @@ foreach ($videos as $archivo) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Reproductor de Video</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos_cortos.css">
 </head>
 <body>
 <!-- HTML protegido -->
-    <h1>Mi Reproductor de Videos</h1>
 
      <video id="videoPlayer" controls autoplay muted></video>
 
@@ -36,7 +37,6 @@ foreach ($videos as $archivo) {
         const listaReproduccion = <?php echo json_encode($lista_videos); ?>;
     </script>
     <script src="reproductor_x.js"></script>
-    <a href="videos_cortos.php">atras</a>
 
 
 </body>

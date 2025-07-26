@@ -1,0 +1,40 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #001;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: #aaa;
+  background-color: #111;
+}
+
+
+#videoPlayer{
+    width: 60%;
+    height: 100vh;
+    border-radius: 8px;
+}
+
+
+
+
+
+@media(max-width: 635px){
+
+#videoPlayer{
+    width: 100vh;
+    height: 100vh;
+    border-radius: 8px;
+}
+
+
+
+}
