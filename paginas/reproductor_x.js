@@ -3,7 +3,6 @@ let indiceActual = 0;
 function cargarVideo(indice) {
     if (indice < listaReproduccion.length) {
         video.src = listaReproduccion[indice];
-       
     video.play();
 
 

@@ -16,6 +16,8 @@
     <a href="paginas/Linux.php">Linux</a>
     <a href="paginas/registro.php">Iniciar Sesion</a>
 
+    <a href="paginas/POS/POS.php">Punto de Venta</a>
+
 </body>
 
 </html>

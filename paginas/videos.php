@@ -11,6 +11,7 @@ foreach ($videos as $archivo) {
         $lista_videos[] = $directorio . $archivo;
     }
 }
+shuffle($lista_videos);
 ?>
 <?php
 session_start();

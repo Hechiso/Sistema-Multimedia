@@ -1,0 +1,20 @@
+h2{
+  color: #000;
+  text-align: center;
+}
+
+p{
+  color: #aaa;
+  float: left;
+}
+
+.fecha{
+  float: right;
+}
+
+
+@media(max-width: 635px){
+
+
+}
+
