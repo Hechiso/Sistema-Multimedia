@@ -1,0 +1,60 @@
+<?php
+// Mostrar errores
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// Conexión a la base de datos SQLite
+$db = new SQLite3('articulos.db');
+
+// Consulta todos los artículos
+$resultado = $db->query("SELECT * FROM articulos");
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Artículos</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+        }
+        th, td {
+            padding: 0.6rem;
+            border: 1px solid #aaa;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📦 Artículos Registrados</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Medida</th>
+        <th>SKU</th>
+        <th>Precio</th>
+    </tr>
+    <?php while ($fila = $resultado->fetchArray(SQLITE3_ASSOC)) : ?>
+    <tr>
+        <td><?= htmlspecialchars($fila['id']) ?></td>
+        <td><?= htmlspecialchars($fila['medida']) ?></td>
+        <td><?= htmlspecialchars($fila['sku']) ?></td>
+        <td>$<?= number_format($fila['precio'], 2) ?></td>
+    </tr>
+    <?php endwhile; ?>
+</table>
+
+</body>
+</html>
+

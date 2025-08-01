@@ -13,7 +13,7 @@
  
   <a href="agregar_articulo.php">nuevo articulo</a>
   <a href="#">eliminar articulo</a>
-  <a href="#">inventario</a>
+  <a href="leer_articulos.php">inventario</a>
   <a href="#" class="fecha">comenzar a vender</a>
   
 
