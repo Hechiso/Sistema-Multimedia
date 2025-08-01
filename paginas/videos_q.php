@@ -22,6 +22,9 @@ if (!isset($_SESSION['usuario'])) {
 
 <a href="varios.php">varios</a>
 <a href="videos.php">caliente</a>
+<a href="jap.php">japones</a>
+<a href="est.php">estiramientos</a>
+<a href="des.php">desfiles</a>
 <a href="videos_p.php">x-videos</a>
 <a href="mangas_p.php">mangas</a>
 
