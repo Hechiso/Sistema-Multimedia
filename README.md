@@ -5,15 +5,14 @@
 *Este Proyecto es solo con fines de desarrollar habilidades de diseño de sitios web asi como crear un servidor personal,el cual servira para almacenar para cualquer contenido multimedia ,las funciones que tendra seran las siguientes :*
 
 * Visualizar Anime
-* Visualizar Video Varios
+* Visualizar Video
 * Visualizar Libros
 * Visualizar Mangas
 * Reproducir Musica
-* Crear un sitio personalizado (Atrevez de una subscripcion)
-* Guardar tus archivos (Atravez de una subscripcion)
-
-
-
+* Guardar tus archivos (Desde otros dispositivos)
+* Blog para documentar conocimientos varios
+* Crear un CCV personalizado(Circuito Cerrado)
+* Crear un POS personalizado(Punto de venta)
 
 **Tecnologias Utilizadas**
 
@@ -26,7 +25,7 @@
 - Bash
 - Ffmpeg
 
-*Sistema operativo (linux)*
+**Sistema operativo (linux)**
 
 
 
@@ -34,7 +33,7 @@
 **Instalacion**
 
 *Para la instalacion y configuracion de este proyecto he dejado un script en bash que facilita la instalacion.
- ver el contenido de la carpeta Scripts.*
+ver el contenido de la carpeta Scripts.*
 
 
 
