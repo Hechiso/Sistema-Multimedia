@@ -69,6 +69,8 @@
 **Capturas de pantalla**
 
 ![Vista principal](docs/screenshot_principal.png)
+![Vista principal](docs/screenshot_principal_m.png)
+
 
 
 **Hoja de ruta**

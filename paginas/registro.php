@@ -7,7 +7,8 @@
     <title>Inicia Sesion</title>
 
     <link rel="stylesheet" href="../css/estilos_principal.css">
-
+    <link rel="stylesheet" href="../css/estilos_nuevo.css">
+   
 </head>
 <body class="cuerpo">
 
@@ -17,7 +18,7 @@
     <div class="container right">
 	<form method="post" action="../php/iniciar.php" autocomplete="off">
             <h2>Entrar</h2>
-            <input type="text" name="usuario" placeholder="Entrenador" required>
+            <input type="text" name="usuario" placeholder="Usuario" required>
             <button type="submit" name="enviar">Entrar</button>
         </form>
 </div>

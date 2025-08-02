@@ -10,6 +10,20 @@ $db = new SQLite3('articulos.db');
 $resultado = $db->query("SELECT * FROM articulos");
 ?>
 
+<?php
+// Mostrar errores
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// Conexión a la base de datos SQLite
+$db = new SQLite3('articulos.db');
+
+// Consulta todos los artículos
+$resul = $db->query("SELECT * FROM stock");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,10 +64,25 @@ $resultado = $db->query("SELECT * FROM articulos");
         <td><?= htmlspecialchars($fila['id']) ?></td>
         <td><?= htmlspecialchars($fila['medida']) ?></td>
         <td><?= htmlspecialchars($fila['sku']) ?></td>
-        <td>$<?= number_format($fila['precio'], 2) ?></td>
+	<td>$<?= number_format($fila['precio'], 2) ?></td>
     </tr>
     <?php endwhile; ?>
 </table>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>cantidad</th>
+    </tr>
+    <?php while ($fila = $resul->fetchArray(SQLITE3_ASSOC)) : ?>
+    <tr>
+        <td><?= htmlspecialchars($fila['producto_id']) ?></td>
+        <td><?= htmlspecialchars($fila['cantidad']) ?></td>
+    </tr>
+    <?php endwhile; ?>
+</table>
+
+
 
 </body>
 </html>

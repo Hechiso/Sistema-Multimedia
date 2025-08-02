@@ -12,9 +12,24 @@ p{
   float: right;
 }
 
+hr{
+  height: 2px;
+  background-color: #aaa;
+}
 
-@media(max-width: 635px){
+.derecha{
+  float: left;
+  width: 70vh;
+  height: 88vh;
+  background-color: #000;
+  color: #aaa;
+}
 
+.izquierda{
+  float: right;
+}
 
+.codigo{
+  color: #aaa;
 }
 
