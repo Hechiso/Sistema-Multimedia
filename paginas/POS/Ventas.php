@@ -1,4 +1,7 @@
 <?php
+// Aumenta el tiempo de vida de la sesión a 8 horas (28800 segundos)
+ini_set('session.gc_maxlifetime', 28800);
+ini_set('session.cookie_lifetime', 28800);
 session_start();
 ?>
 
@@ -30,22 +33,44 @@ session_start();
              y la hora actual es 
              <span id="hora"></span>
 	  </p>
+
 <?php
 if (isset($_SESSION['usuario'])) {
     echo "Bienvenido," . htmlspecialchars($_SESSION['usuario']) . "!  hora de vender";
 } else {
     echo "No has iniciado sesión.";
 }
+
+echo '<hr></hr>';
+include 'agregar_ventas.php';
+ 
+
+
+ echo '<hr></hr>'; 
+ include 'sumar_ticket.php';
+
 ?>
+
       </div>
 
 
 
       <div class="izquierda">
-	 <form>
+	 <form method="POST" action="agregar_ventas.php">
              <label class="codigo">escribe el codigo</label>
-             <input type="text"></input>
+	     <input type="text" class="fecha" name="sku"></input>
+             <br></br>
+	     <label class="codigo">cantidad</label>
+             <input type="text" class="fecha" name="cantidad"></input>
+             <br></br>
+             <button type="submit">agregar a ticket</button>
+	 </form>
+         
+	 <form method="POST" action="sumar_ticket.php">
+             <br></br>
+             <button type="submit" class="cerrar">Cerrar compra</button>
          </form>
+
       </div>
 
   </div>

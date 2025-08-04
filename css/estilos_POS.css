@@ -21,15 +21,25 @@ hr{
   float: left;
   width: 70vh;
   height: 88vh;
+  overflow-y: auto;
   background-color: #000;
   color: #aaa;
 }
 
 .izquierda{
   float: right;
+  width: 30%;
+  background-color: #123;
 }
 
 .codigo{
   color: #aaa;
 }
+
+.cerrar{
+  float: right;
+}
+
+
+
 
