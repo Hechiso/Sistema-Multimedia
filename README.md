@@ -76,9 +76,6 @@ ver el contenido de la carpeta Scripts.*
 
 
 
-
 **Autor**
 - Jose francisco (Desarrollador Principal)
 - Jose francisco (Diseñador UI)
-
-
