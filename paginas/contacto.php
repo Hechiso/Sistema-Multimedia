@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>La Caverna Del Nigromante</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos_blog.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos_blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos_principal.css">
     <script src="script.js" defer></script>
 
 </head>
-<body>
+<body class="cuerpo">
 
     <header class="header">
      <div class="header-izquierda">
@@ -18,9 +18,8 @@
      <div class="header-derecha">
         <nav>
             <ul>
-                <li><a href="acerca.html">Acerca de mi</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="index.html">Principal</a></li>
+                <li><a href="acerca.php">Acerca de mi</a></li>
+                <li><a href="../index.php">Principal</a></li>
             </ul>
         </nav>
       </div>
@@ -38,16 +37,14 @@
       <p>Tambien te dejo un un link de mis repositorios 
           en github  los cuales espero seguir actualizando</p>
       
-      <button><a href="https://www.facebook.com/profile.php?id=100094572939504">facebook</a>
-      </button>	
+      
+</div>
 
-      <button><a href="https://www.github.com/Hechiso">Github</a></button>
-   
-    </div>
+<div>
+<a href="https://www.facebook.com/profile.php?id=100094572939504">facebook</a>
+      <a href="https://www.github.com/Hechiso">Github</a>
 
-
-
-
+</div>
 
   </body>
 </html>

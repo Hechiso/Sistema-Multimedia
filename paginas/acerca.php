@@ -2,11 +2,15 @@
 
 <html>
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Caverna Del Nigromante</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos_blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos_blog.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos_principal.css">
 
 </head>
-<body>
+<body class="cuerpo">
 
     <header class="header">
      <div class="header-izquierda">
@@ -18,9 +22,8 @@
      <div class="header-derecha">
         <nav>
             <ul>
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="../index.php">Principal</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
             </ul>
         </nav>
       </div>

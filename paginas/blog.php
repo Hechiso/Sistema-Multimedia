@@ -2,12 +2,11 @@
 <html>
 <head>
     <title>La Caverna Del Nigromante</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos_blog.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilos_principal.css">
+  <link rel="stylesheet" type="text/css" href="../css/estilos_blogs.css">
 
 </head>
-<body>
+<body class="cuerpo">
 
     <header class="header">
      <div class="header-izquierda">
@@ -18,9 +17,8 @@
      <div class="header-derecha">
         <nav>
             <ul>
-                <li><a href="acerca.html">Acerca de mi</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
-		<li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.php">Acerca de mi</a></li>
+		<li><a href="contacto.php">Contacto</a></li>
 
             </ul>
         </nav>
@@ -40,8 +38,8 @@
 
 
           <div class="articulo">
-          <h4>Problemas de android con resolucion de dns</h4>
-	     <article>
+                  <h4>Problemas de android con resolucion de dns</h4>
+	            <article>
 		<p>Que tal gente ,ayer en la tarde me tope con
 		   un problema celular con android ,en concreto
 		   con el modelo moto one y es que al momento 
@@ -104,7 +102,7 @@
 		   puse a buscar un nuevo anime y encontre 
 		   BTOOM ,asi que si lo haz visto participa
 		   en la votacion para ver que te parecio</p>
-	<img src="Btooom_logo.png" alt="Descripción de la imagen">
+	<img src="rc_img/Btooom_logo.png" alt="Descripción de la imagen">
 	     </article>
     
 	     <!--
@@ -141,7 +139,7 @@
    
     <!-- ---------------------------------------------------- -->
     <footer>
-        <p>¡Gracias por visitarnos!</p>
+        <p>Gracias por visitarnos!</p>
     </footer>
    </body>
 </html>
