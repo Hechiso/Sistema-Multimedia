@@ -34,22 +34,20 @@ session_start();
              <span id="hora"></span>
 	  </p>
 
-<?php
-if (isset($_SESSION['usuario'])) {
-    echo "Bienvenido," . htmlspecialchars($_SESSION['usuario']) . "!  hora de vender";
-} else {
-    echo "No has iniciado sesión.";
-}
+  <?php
+       if (isset($_SESSION['usuario'])) {
+           echo "Bienvenido," . htmlspecialchars($_SESSION['usuario']) . "!  hora de vender";
+       } else {
+           echo "No has iniciado sesión.";
+       }
 
-echo '<hr></hr>';
-include 'agregar_ventas.php';
+       echo '<hr></hr>';
+       include 'agregar_ventas.php';
  
+       echo '<hr></hr>'; 
+       include 'sumar_ticket.php';
 
-
- echo '<hr></hr>'; 
- include 'sumar_ticket.php';
-
-?>
+  ?>
 
       </div>
 

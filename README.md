@@ -73,6 +73,14 @@ ver el contenido de la carpeta Scripts.*
 ![Vista principal](docs/screenshot_videos_m.png)
 
 
+**Punto de Venta**
+
+![Vista principal](docs/screenshot_sesion.png)
+![Vista principal](docs/screenshot_mercancias.png)
+![Vista principal](docs/screenshot_formulario.png)
+![Vista principal](docs/screenshot_inventario.png)
+![Vista principal](docs/screenshot_ventas.png)
+
 **Hoja de ruta**
 
 

@@ -19,15 +19,11 @@
     <a href="paginas/libros.php">Libros</a>
     <a href="paginas/Linux.php">Linux</a>
     <a href="paginas/registro.php">Iniciar Sesion</a>
-
     <a href="paginas/POS/POS.php">Punto de Venta</a>
     <a href="paginas/camara.php">Circuto cerrado</a>
-
     <a class="izquierda" href="paginas/acerca.php">acerca</a>
-
     <a href="paginas/blog.php">Blogs</a>
     
-    <a href="paginas/html/Paginas/Hajime.html">Bsssss</a>
 
 </body>
 
