@@ -27,7 +27,7 @@
 
     <a href="paginas/blog.php">Blogs</a>
     
-    <a href="paginas/html/index.html">Bsssss</a>
+    <a href="paginas/html/Paginas/Hajime.html">Bsssss</a>
 
 </body>
 
