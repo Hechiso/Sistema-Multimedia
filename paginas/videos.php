@@ -1,5 +1,5 @@
 <?php
-$directorio = "../media/varios/var/";
+$directorio = "../media/varios/limpios/";
 $videos = array_diff(scandir($directorio), array('.', '..'));
 
 $extensiones_validas = ['mp4', 'webm', 'ogg'];

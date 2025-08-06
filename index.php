@@ -15,7 +15,7 @@
 
     <a href="paginas/videos_principal.php">Videos</a>
     <a href="paginas/mangas.php">Mangas</a>
-    <a href="#">Musica</a>
+    <a href="paginas/reproductor_musica.php">Musica</a>
     <a href="paginas/libros.php">Libros</a>
     <a href="paginas/Linux.php">Linux</a>
     <a href="paginas/registro.php">Iniciar Sesion</a>
@@ -27,6 +27,7 @@
 
     <a href="paginas/blog.php">Blogs</a>
     
+    <a href="paginas/html/index.html">Bsssss</a>
 
 </body>
 

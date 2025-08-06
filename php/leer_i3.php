@@ -19,7 +19,7 @@ function mostrarArticulo($data) {
     echo "<h2>" . htmlspecialchars($data['titulo']) . "</h2>";
 
     foreach ($data['contenido'] as $parrafo) {
-        echo "<p>" . htmlspecialchars($parrafo) . "</p>";
+        echo "<p>" . nl2br(htmlspecialchars($parrafo)) . "</p>";
     }
 
     echo "</div><hr>";

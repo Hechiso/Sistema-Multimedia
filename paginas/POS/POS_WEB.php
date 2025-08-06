@@ -16,6 +16,7 @@
   <a href="leer_articulos.php">inventario</a>
   <a href="comprar_mercancia.php">comprar mercancia</a>
 
+  <a href="Descripciones.php">GET</a>
   <a href="Ventas.php" class="fecha">comenzar a vender</a>
   
 

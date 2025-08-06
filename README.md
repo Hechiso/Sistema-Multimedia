@@ -69,7 +69,8 @@ ver el contenido de la carpeta Scripts.*
 
 ![Vista principal](docs/screenshot_principal.png)
 ![Vista principal](docs/screenshot_principal_m.png)
-
+![Vista principal](docs/screenshot_videos.png)
+![Vista principal](docs/screenshot_videos_m.png)
 
 
 **Hoja de ruta**

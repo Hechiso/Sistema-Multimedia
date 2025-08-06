@@ -6,11 +6,9 @@ $archivos = glob("$carpeta/*.json");
 function mostrarArticulo($data) {
 
     echo "<div class='articulo'>";
-
     echo "<p><strong>Categoría:</strong> " . htmlspecialchars($data['categoria']) . "</p>";
     echo "<p><strong>Fecha:</strong> " . htmlspecialchars($data['fecha']) . "</p>";
     echo "<p><strong>Autor:</strong> " . htmlspecialchars($data['autor']) . "</p>";
-
     echo "</div>";
 
     /*------------------------------------------------------*/    
@@ -19,7 +17,7 @@ function mostrarArticulo($data) {
     echo "<h2>" . htmlspecialchars($data['titulo']) . "</h2>";
 
     foreach ($data['contenido'] as $parrafo) {
-        echo "<p>" . htmlspecialchars($parrafo) . "</p>";
+        echo "<p>" . nl2br(htmlspecialchars($parrafo)) . "</p>";
     }
 
     echo "</div><hr>";
@@ -35,6 +33,7 @@ foreach ($archivos as $archivo) {
         echo "⚠️ Error al decodificar el archivo: $archivo<br>";
     }
 }
+
 
 ?>
 
