@@ -1,9 +1,5 @@
-<?php
-// Aumenta el tiempo de vida de la sesión a 8 horas (28800 segundos)
-ini_set('session.gc_maxlifetime', 28800);
-ini_set('session.cookie_lifetime', 28800);
-session_start();
-?>
+<?php include '../../php/manterner_sesion.php'; ?>
+<?php include '../../php/errores.php'; ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -20,15 +16,18 @@ session_start();
  
   <a href="#">escanear codigo</a>
   <a href="#">escribir codigo</a>
-  <a href="#">cancelar compra</a>
-  <a href="#" class="fecha">corte</a>
+<a href="corte.php" class="fecha">corte</a>
 
   <br></br>
   <hr></hr> 
 
   <div class="contenedor">
+
       <div class="derecha">
-          <p>Hoy es 
+
+
+
+	  <p>Hoy es 
              <?php echo date("d/m/Y"); ?> 
              y la hora actual es 
              <span id="hora"></span>
@@ -42,10 +41,51 @@ session_start();
        }
 
        echo '<hr></hr>';
-       include 'agregar_ventas.php';
+
+
+       /* ########################################################## */
+	
+	
+if (!empty($_SESSION['carrito'])) {
+    echo "<h3>Artículos en el ticket:</h3>";
+    echo "<ul>";
+    $total_general = 0;
+    foreach ($_SESSION['carrito'] as $item) {
+    
+/*	    echo "<li>" . htmlspecialchars($item['medida']) .
+             " x" . $item['cantidad'] . 
+             " - $" . number_format($item['total'], 2) . "</li>";
+ */	$total_general += $item['total'];
  
+
+
+
+echo '<li>' . htmlspecialchars($item['medida']) .
+     ' x [ ' . $item['cantidad'] .
+     ' ] - $' . number_format($item['total'], 2) .
+     ' <a href="quitar_del_carrito.php?id=' . $item['id'] . '" onclick="return confirm(\'¿Eliminar este producto del carrito?\')">❌ Quitar</a>' .
+     '</li>';
+
+
+
+
+    }
+
+
+    echo "</ul>";
        echo '<hr></hr>'; 
-       include 'sumar_ticket.php';
+    echo "<p><strong>Total: $" . number_format($total_general, 2) . "</strong></p>";
+} else {
+    echo "<p>No hay artículos agregados aún.</p>";
+}
+
+
+
+/* ##########################################################*/
+
+
+
+
 
   ?>
 
@@ -54,6 +94,10 @@ session_start();
 
 
       <div class="izquierda">
+
+
+
+
 	 <form method="POST" action="agregar_ventas.php">
              <label class="codigo">escribe el codigo</label>
 	     <input type="text" class="fecha" name="sku"></input>
@@ -68,6 +112,9 @@ session_start();
              <br></br>
              <button type="submit" class="cerrar">Cerrar compra</button>
          </form>
+
+
+
 
       </div>
 
