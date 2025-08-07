@@ -18,7 +18,9 @@
 
             <h2>Registrar</h2>
             <input type="text" name="usuario" placeholder="Cajero" required>
-            <button type="submit" name="enviar">Registrar</button>
+            <input type="password" name="contra" placeholder="Constraseña" required>
+            <br></br>
+	    <button type="submit" name="enviar">Registrar</button>
         </form>
     </div>
 

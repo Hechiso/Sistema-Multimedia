@@ -1,44 +1,43 @@
 <?php
 session_start();
 
-if (isset($_POST['enviar'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuarioIngresado = trim($_POST['usuario']);
+    $contrasenaIngresada = trim($_POST['contra']);
 
-    $usuario = trim($_POST['usuario']); // Eliminar espacios en blanco
-    $archivo = "Lista_usuarios.txt";
-
-    // Verificar si el archivo existe antes de leerlo
-    if (!file_exists($archivo)) {
-	    // header("Location: error_no_archivo.html");
-	    echo "el archivo registro.txt no existe.";
+    if (empty($usuarioIngresado) || empty($contrasenaIngresada)) {
+        echo "❌ Usuario o contraseña vacíos.";
         exit;
     }
 
-    $lineasArchivo = file($archivo, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $loginExitoso = false; // Bandera para verificar autenticación
+    $db = new SQLite3('base.db');
 
-    foreach ($lineasArchivo as $linea) {
-        if (preg_match('/^USUARIO:\s*(.+)$/', $linea, $matches)) {
-            $archivoUsuario = trim($matches[1]);
-            // Verificar si el usuario coincide
-            if ($archivoUsuario === $usuario) {
-                $loginExitoso = true;
-                break;
-            }
+    // Buscar usuario en la base de datos
+    $stmt = $db->prepare("SELECT * FROM usuarios WHERE usuario = :usuario");
+    $stmt->bindValue(':usuario', $usuarioIngresado, SQLITE3_TEXT);
+    $resultado = $stmt->execute();
+
+    $usuario = $resultado->fetchArray(SQLITE3_ASSOC);
+
+    if ($usuario) {
+        $hashGuardado = $usuario['contra'];
+
+        if (password_verify($contrasenaIngresada, $hashGuardado)) {
+            // Inicio de sesión exitoso
+            $_SESSION['usuario'] = $usuarioIngresado;
+            echo "✅ Bienvenido, $usuarioIngresado";
+
+            // Redirige al POS
+            header("Location: POS_WEB.php");
+            exit;
+        } else {
+            echo "❌ Contraseña incorrecta.";
         }
-    }
-
-    if ($loginExitoso) {
-	      $_SESSION['usuario'] = $_POST['usuario'];  // Guardar el usuario en la sesión
-        header("Location: POS_WEB.php");
-        exit;
     } else {
-        echo "Usuario no registrado.";
-        exit;
+        echo "❌ Usuario no encontrado.";
     }
-    } else {
-        echo "Acceso no autorizado.";
-    }
-
+} else {
+    echo "Acceso no autorizado.";
+}
 ?>
-
 

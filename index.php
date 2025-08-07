@@ -17,7 +17,6 @@
     <a href="paginas/mangas.php">Mangas</a>
     <a href="paginas/reproductor_musica.php">Musica</a>
     <a href="paginas/libros.php">Libros</a>
-    <a href="paginas/Linux.php">Linux</a>
     <a href="paginas/registro.php">Iniciar Sesion</a>
     <a href="paginas/POS/POS.php">Punto de Venta</a>
     <a href="paginas/camara.php">Circuto cerrado</a>
