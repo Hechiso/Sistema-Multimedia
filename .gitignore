@@ -5,7 +5,7 @@ paginas/rc_img/
 
 paginas/articulos/
 
-paginas/html/
+stream/
 
 #ignora el archivo de los permisos
 permisos.sh
