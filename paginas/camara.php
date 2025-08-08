@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <meta charset="utf-8">
-    <meta name="color-scheme" content="light dark">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>La Caverna Del Nigromante</title>
+    <meta charset="utf-8" />
+    <title>Stream HLS con VLC</title>
 </head>
 <body>
 
-    <!-- Contenido principal -->
-    <main>
-	     <iframe src="/stream" width="640" height="480" frameborder="0" allowfullscreen></iframe> 
+<video id="video" width="640" height="360" controls autoplay muted></video>
 
-    </main>
-
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+    var video = document.getElementById('video');
+    if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource('/stream/playlist.m3u8');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, function() {
+            video.play();
+        });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = '/stream/playlist.m3u8';
+        video.addEventListener('loadedmetadata', function() {
+            video.play();
+        });
+    }
+</script>
 
 </body>
 </html>

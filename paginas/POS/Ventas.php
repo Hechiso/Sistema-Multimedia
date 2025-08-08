@@ -15,8 +15,7 @@
 <body class="cuerpo">
  
   <a href="#">escanear codigo</a>
-  <a href="#">escribir codigo</a>
-<a href="corte.php" class="fecha">corte</a>
+  <a href="corte.php" class="fecha">corte</a>
 
   <br></br>
   <hr></hr> 
@@ -25,79 +24,46 @@
 
       <div class="derecha">
 
-
-
 	  <p>Hoy es 
              <?php echo date("d/m/Y"); ?> 
              y la hora actual es 
              <span id="hora"></span>
 	  </p>
 
-  <?php
-       if (isset($_SESSION['usuario'])) {
-           echo "Bienvenido," . htmlspecialchars($_SESSION['usuario']) . "!  hora de vender";
-       } else {
-           echo "No has iniciado sesión.";
-       }
+          <?php
+              if (isset($_SESSION['usuario'])) {
+                 echo "Bienvenido," . htmlspecialchars($_SESSION['usuario']) . "!  hora de vender";
+              } else {
+                 echo "No has iniciado sesión.";
+              }
 
-       echo '<hr></hr>';
-
-
-       /* ########################################################## */
+              echo '<hr></hr>';
 	
-	
-if (!empty($_SESSION['carrito'])) {
-    echo "<h3>Artículos en el ticket:</h3>";
-    echo "<ul>";
-    $total_general = 0;
-    foreach ($_SESSION['carrito'] as $item) {
-    
-/*	    echo "<li>" . htmlspecialchars($item['medida']) .
-             " x" . $item['cantidad'] . 
-             " - $" . number_format($item['total'], 2) . "</li>";
- */	$total_general += $item['total'];
+              if (!empty($_SESSION['carrito'])) {
+                  echo "<h3>Artículos en el ticket:</h3>";
+                  echo "<ul>";
+                  $total_general = 0;
+
+		  foreach ($_SESSION['carrito'] as $item) {
+ 	              $total_general += $item['total'];
  
+                      echo '<li>' . htmlspecialchars($item['medida']) .
+                           ' x [ ' . $item['cantidad'] .
+                           ' ] - $' . number_format($item['total'], 2) .
+                           ' <a href="quitar_del_carrito.php?id=' . $item['id'] . '" onclick="return confirm(\'¿Eliminar este producto del carrito?\')">❌ Quitar</a>' . '</li>';
+                  }
 
-
-
-echo '<li>' . htmlspecialchars($item['medida']) .
-     ' x [ ' . $item['cantidad'] .
-     ' ] - $' . number_format($item['total'], 2) .
-     ' <a href="quitar_del_carrito.php?id=' . $item['id'] . '" onclick="return confirm(\'¿Eliminar este producto del carrito?\')">❌ Quitar</a>' .
-     '</li>';
-
-
-
-
-    }
-
-
-    echo "</ul>";
-       echo '<hr></hr>'; 
-    echo "<p><strong>Total: $" . number_format($total_general, 2) . "</strong></p>";
-} else {
-    echo "<p>No hay artículos agregados aún.</p>";
-}
-
-
-
-/* ##########################################################*/
-
-
-
-
-
-  ?>
+                  echo "</ul>";
+                  echo '<hr></hr>'; 
+                  echo "<p><strong>Total: $" . number_format($total_general, 2) . "</strong></p>";
+              } else {
+                 echo "<p>No hay artículos agregados aún.</p>";
+              }
+          ?>
 
       </div>
 
-
-
       <div class="izquierda">
-
-
-
-
 	 <form method="POST" action="agregar_ventas.php">
              <label class="codigo">escribe el codigo</label>
 	     <input type="text" class="fecha" name="sku"></input>
@@ -112,10 +78,6 @@ echo '<li>' . htmlspecialchars($item['medida']) .
              <br></br>
              <button type="submit" class="cerrar">Cerrar compra</button>
          </form>
-
-
-
-
       </div>
 
   </div>

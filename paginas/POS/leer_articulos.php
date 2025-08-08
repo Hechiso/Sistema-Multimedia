@@ -29,7 +29,11 @@ $resul = $db->query("SELECT * FROM stock");
 <head>
     <meta charset="UTF-8">
     <title>Listado de Artículos</title>
+    <link rel="stylesheet" href="../../css/estilos_principal.css">
     <style>
+	body{
+            color: #fff;
+        }
         table {
             border-collapse: collapse;
             width: 70%;
@@ -37,18 +41,18 @@ $resul = $db->query("SELECT * FROM stock");
         }
         th, td {
             padding: 0.6rem;
-            border: 1px solid #aaa;
+            border: 1px solid #029;
             text-align: center;
         }
         th {
-            background-color: #ddd;
+            background-color: #012;
         }
         h1 {
             text-align: center;
         }
     </style>
 </head>
-<body>
+<body class="cuerpo">
 
 <h1>📦 Artículos Registrados</h1>
 
