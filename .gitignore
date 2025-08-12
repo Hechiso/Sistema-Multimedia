@@ -1,0 +1,15 @@
+#ignora la carpeta de los archivos multimedia
+media/
+
+paginas/rc_img/
+
+paginas/articulos/
+
+stream/
+
+php/Lista_usuarios.txt
+
+#ignora el archivo de los permisos
+permisos.sh
+
+paginas/POS/articulos.db

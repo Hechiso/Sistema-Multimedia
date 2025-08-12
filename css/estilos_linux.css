@@ -1,0 +1,80 @@
+body {
+    background-color: #012;
+    margin: 0;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacio entre elementos */
+    justify-content: left; /* Centra los elementos horizontalmente */
+}
+
+/* CADA TARJETA DE VIDEO / ENLACE */
+.systemd {
+    background-color: #999;
+    width: calc(33.33% - 1rem); /* 3 columnas con separación */
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+
+}
+
+.systemd:hover {
+    transform: scale(1.02);
+}
+
+/* IMAGEN DENTRO DEL BLOQUE */
+.systemd img {
+    width: 100%;
+    display: block;
+    height: 300px;
+}
+
+/* ENLACES Y TEXTO */
+.systemd a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+@media(max-width: 635px){
+
+.contenedor {
+    display: block;
+    width: 100%;
+}
+
+  .systemd {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: #999;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+
+}
+
+  
+.systemd img {
+    width: 100%;
+    display: flex;
+    height: 300px;
+}
+
+.systemd a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+}
+
+}
+

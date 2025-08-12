@@ -1,0 +1,31 @@
+html{
+  font-size: 16px:
+}
+
+body{
+  background-color: #012;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+img{
+  width: 30%;
+  margin: 1rem;
+}
+
+
+
+@media(max-width: 635px){
+    
+body{
+  display: grid;
+
+}
+
+img{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3em;
+  padding: 1em;
+  margin: 1em;
+}

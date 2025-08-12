@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-izquierda {
+   text-align: left;
+}
+
+.header-derecha {
+   text-align: right;
+}
+
+/*------------------------------*/
+
+.acerca {
+   margin-left: 2%;
+   margin-right: 2%;
+   margin-bottom: 2%;
+   margin-top: 2%;
+   text-align: center;
+   color: #ddd;
+   border: solid;
+   border-radius: 5px;
+}
+
+.P {
+  text-align: center; 
+  margin: 2%;
+}
+
+.descripcion{
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+    border: solid;
+    border-radius: 5px;    
+    color: #ddd;
+}
+
+.descripcion p{
+    margin-left: 2%;
+}
+
+/*------------------------------*/
+
+.Principal {
+    display: flex;
+    text-align: left;
+    flex: 1;
+}
+section {	
+    margin: 1%;	
+    width: 70%;
+    border-radius: 5px;
+}
+aside {	
+    margin: 1%;	
+    width: 30%;
+    border-radius: 5px;
+}
+.Principal h2{
+    margin-left: 5px;	
+    color: #444;
+}
+.Principal h1{
+    margin-left: 5px;	
+    text-align: left;
+    color: #444;
+}
+
+/*------------------------------*/
+
+.articulo {
+  flex 1;
+  margin: 1%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.articulo p {
+  margin: 1%;
+}
+
+.articulo h4 {
+  margin-left: 1%;	
+  margin-top: 0;	
+  margin-bottom: 0;
+}
+article{
+   display: flex;
+}
+
+img {
+   width: 300px;
+   height: 100px;
+}
+
+/*------------------------------*/
+
+
+.registro {
+   width: 30%;
+   margin: auto;
+   margin-top: 3%;
+   color: #fff;
+   border-radius: 5px;
+}
+
+.registro h2 {
+   margin: 0;
+   text-align: center;
+}
+.registro form{
+   margin: 5%;
+}
+
+.registro input[type="submit"] {
+   display: block;
+   margin: 0 auto;
+   margin-top: 5%;
+}
+
+.boton {
+   
+   border: none;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   
+}
+
+.boton #icono {
+   margin-right: 5px;
+}
+
+/*------------------------------*/
+
+.contacto {
+ margin: 1%;
+ border: solid;
+ border-radius: 5px;
+ height: 20%;
+ width: 70%;
+ color: #aaa;
+}
+
+.contacto p{
+margin: 1%;
+text-align: center;
+}
+
+.contacto a {
+text-decoration: none;
+color: #aaa;
+}
+
+/*------------------------------*/
+.menuCategorias{
+display: flex;
+flex-direction: column;
+}
+
+.menuCategorias a{
+text-decoration: none;
+margin-left: 2%;
+color: #333;
+}
+
+/*------------------------------*/
+.introduccion{
+margin: 1%;
+}
+
+.introduccion article{
+display: flex;
+flex-direction: column;
+}
+
+/*------------------------------*/
+
+p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {	
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+/* Estilos específicos */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+}
+
+h3 {
+   text-align: left;
+}
+
+

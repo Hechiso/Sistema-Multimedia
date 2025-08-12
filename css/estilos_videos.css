@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #001;
+    font-family: sans-serif;
+}
+
+/* ✅ Cuadrícula de 4 columnas */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas del mismo ancho */
+    gap: 1.3em; /* espacio entre los videos */
+    padding: 0.7em;
+}
+
+/* ✅ Cada item tiene ancho automático en grid */
+.video-item {
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em #000;
+}
+
+.video-thumb {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid #555;
+    transition: border-color 0.3s;
+    border-radius: 10px; 
+    box-shadow: 0 0 15px #008;
+}
+
+.video-thumb:hover {
+    border-color: #004;
+}
+
+video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+
+@media(max-width: 635px){
+
+	.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columnas del mismo ancho */
+    gap: 1.3em; /* espacio entre los videos */
+    padding: 0.7em;
+}
+
+
+}

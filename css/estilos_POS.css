@@ -1,0 +1,45 @@
+h2{
+  color: #000;
+  text-align: center;
+}
+
+p{
+  color: #aaa;
+  float: left;
+}
+
+.fecha{
+  float: right;
+}
+
+hr{
+  height: 2px;
+  background-color: #aaa;
+}
+
+.derecha{
+  float: left;
+  width: 70vh;
+  height: 88vh;
+  overflow-y: auto;
+  background-color: #000;
+  color: #aaa;
+}
+
+.izquierda{
+  float: right;
+  width: 30%;
+  background-color: #123;
+}
+
+.codigo{
+  color: #aaa;
+}
+
+.cerrar{
+  float: right;
+}
+
+
+
+
